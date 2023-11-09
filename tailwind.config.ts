@@ -1,20 +1,87 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        gray: {
+          "100": "#171a21",
+          "200": "#0f1115",
+          "300": "rgba(15, 17, 21, 0.3)",
+        },
+        white: "#fff",
+        black: "#000",
+        dimgray: {
+          "100": "#6d6d72",
+          "200": "#616773",
+        },
+        aquamarine: "#49ffe6",
+        turquoise: {
+          "100": "#61f5e4",
+          "200": "#1fc6af",
+        },
+        darkgray: "#959ba6",
+        darkslategray: {
+          "100": "#2d3340",
+          "200": "#333",
+        },
+        gainsboro: "#e1e3e8",
+        whitesmoke: "#efefef",
+        lightgray: "#d6d6d5",
       },
+      spacing: {},
+      fontFamily: {
+        "ibm-plex-mono": "'IBM Plex Mono'",
+        inter: "Inter",
+      },
+      borderRadius: {
+        "47xl": "66px",
+        "3xs": "10px",
+      },
+    },
+    fontSize: {
+      sm: "0.88rem",
+      "sm-5": "0.84rem",
+      "sm-6": "0.85rem",
+      "sm-8": "0.86rem",
+      smi: "0.81rem",
+      "sm-7": "0.86rem",
+      "sm-3": "0.83rem",
+      "sm-9": "0.87rem",
+      "base-1": "0.94rem",
+      "base-8": "0.99rem",
+      "mid-3": "1.08rem",
+      "mid-4": "1.09rem",
+      base: "1rem",
+      "19xl-8": "2.42rem",
+      "xl-7": "1.29rem",
+      xs: "0.75rem",
+      "base-3": "0.96rem",
+      "base-9": "0.99rem",
+      "base-4": "0.96rem",
+      "base-6": "0.98rem",
+      "base-5": "0.97rem",
+      "mid-2": "1.08rem",
+      "37xl": "3.5rem",
+      "4xl-6": "1.48rem",
+      "5xl": "1.5rem",
+      "20xl-4": "2.46rem",
+      "20xl-1": "2.44rem",
+      "2xl": "1.31rem",
+      "mid-7": "1.11rem",
+      "20xl-2": "2.45rem",
+      "8xl-5": "1.72rem",
+      "8xl-8": "1.74rem",
+      "8xl-9": "1.74rem",
+      "45xl": "4rem",
+      inherit: "inherit",
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
